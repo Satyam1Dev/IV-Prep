@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hello</h1>
+     <div> <button id="button">Hello1</button>
+      <button id="button">Hello2</button></div>
+      <button id="button">Hello1</button>
+      <button id="button">Hello2</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna euismod, posuere nulla sed, mollis ipsum. Praesent vehicula nunc quam, nec vehicula ipsum vehicula vel. Etiam sit amet venenatis ex. Maecenas id tristique mauris. Donec ut ipsum id diam luctus malesuada vel in libero. Sed non mauris non augue blandit feugiat. Duis volutpat, justo ut fringilla malesuada, urna orci lobortis dolor, vel consectetur arcu tur
+
+    </div>
+  </body>
+</html>
+
+<script>
+  //Function
+  // let getData = function(a,b) {
+  //     let sum = a+b;
+  //     console.log(sum)
+  // }
+  // getData(2,4)
+
+  // HOF-map,reducer,filter
+  //  In JavaScript, a Higher-Order Function (HOF) is a function that takes one or more functions as
+  //  arguments and/or returns a function as its result.
+  //  A higher-order function can be used to abstract over actions,
+  //  behaviors, or computations, making it more flexible and reusable.
+  //  Some examples of higher-order functions in JavaScript include map, reduce, and filter.
+  //map
+  // map is a higher-order function that takes a function as its argument and applies
+  // that function to each element of an array, returning a new array with the results.
+
+  // let arr = [1,2,3,4,8,7,6,10,9]
+  // let result = arr.map(function(Number){
+  //  return  Number * Number
+  // })
+  // console.log(result)
+  //reducers
+  // map is a higher-order function that takes a function as its argument and
+  // applies that function to each element of an array, returning a new array with the results.
+
+  // let result1 = arr.reduce(function(a,b){
+  //     return a+b
+  // },0)
+  // console.log(result1)
+  // filters
+  // filter is a higher-order function that takes a function as its argument and returns a new array
+  // with all elements that satisfy the condition in the function.
+  // let result2 = arr.filter(function(Number){
+  //     return Number%2 === 0
+  // })
+  //console.log(result2)
+
+  //-how to add event in dom elements?
+  //In JavaScript, you can add an event listener to a DOM element using the addEventListener method. Here's the basic syntax:
+  //element.addEventListener("eventType", CallbackFunction)
+  // let button =document.getElementById("button")
+
+  // button.addEventListener("click",function(e){
+  //     e.preventDefault()
+  //     console.log("Button Clicked")
+  // });
+
+  //-how to add property to a object constructor
+  //To add a property to an object constructor in JavaScript, you can use the prototype property of the constructor function. The prototype property is an object that serves as the
+  // prototype for all instances created using the constructor function.
+  // function Person(name, age){
+  //     this.name = name
+  //     this.age = age
+  // }
+  // Person.prototype.gender = "Male"
+  // let person1= new Person("Abash",30)
+  // let person2= new Person("Kalam",32)
+  // console.log(person1)
+  // console.log(person2)
+  //what is Closure in JavaScript?
+
+  // function outer(){
+  //     let message = "Hello World!"
+  //     function inner(){
+  //         console.log(message)
+  //     }
+  //     return inner()
+  // }
+  //  outer()
+
+  //what is setTimeout setInterval and clearInterval in javascript;
+  //setTimeout
+  //  function greet() {
+
+  //     console.log("the function is fired after 1 second")
+  //  }
+  // setTimeout(greet,'2000')
+  //setInterval
+  // let count =0
+  // function incrementInterval() {
+  // count ++
+  // console.log(count)
+  // }
+  // let interval = setInterval(incrementInterval,'1000')
+
+  // clearInterval(interval)
+
+  //Fetch
+
+  // async function fetchData() {
+  //   let data = await fetch("https://dog.ceo/api/breeds/list/all");
+  //   let res = await data.json();
+  //   console.log(res.message);
+  // }
+  // fetchData();
+  // async function  fetchData() {
+  // try{
+  //     let data = await fetch("https://dog.ceo/api/breeds/list/all");
+  //     console.log(data);
+  //     let result = await data.json();
+  //     console.log(result);
+  //     console.log(result.message);
+  // }catch(err){
+  //     console.log(err)
+  // }
+  //   }
+
+  //   fetchData()
+
+  //   const getData = function () {
+  //     let data = fetch("https://dog.ceo/api/breeds/list/all")
+  //       .then((res) => res.json())
+  //       .then((data) => console.log(data.message))
+  //       .catch((err) => console.log(err));
+  //   };
+  //   getData()
+  // what is Promise?
+  const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const result = Math.random();
+    if (result >= 0.5) {
+      resolve(result);
+    } else {
+      reject(new Error('Result is less than 0.5'));
+    }
+  }, 1000);
+});
+
+promise
+  .then(result => console.log('Result:', result))
+  .catch(error => console.error('Error:', error));
+  console.log(promise)
+</script>

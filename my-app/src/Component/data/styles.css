@@ -1,0 +1,77 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+
+}
+
+#form-wrapper {
+    width: 30%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: start;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 10px;
+
+}
+
+.wrapper>div {
+    text-align: center;
+}
+
+p#price-Heading {
+    margin: 20px 0px 20px 0px;
+}
+
+#price-list-data {
+    width: 65%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    margin: 10px;
+}
+
+div#data-name {
+    display: grid;
+
+}
+
+#data-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    max-height: 550px;
+   
+}
+
+p {
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(99, 97, 97);
+   
+}
+.img {
+    width: 250px!important;
+}

@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    /* moves, rotates, and scales an element all at once */
+    /* transform: translateX(50px) rotate(45deg) scale(2); */
+    /* creates a 3D perspective for an element */
+    /* transform: perspective(500px); */
+    /* tilts an element 30 degrees to the right */
+    /* transform: skew(30deg);
+
+/* tilts an element 10 degrees to the left along the Y axis */
+    /* transform: skewY(-10deg); */
+    /* rotates an element 45 degrees clockwise */
+    /* transform: rotate(45deg);
+
+/* rotates an element 180 degrees around the Y axis (flips it horizontally) */
+    /* transform: rotateY(180deg); */
+
+
+
+    /* moves an element 50 pixels to the right and 20 pixels down */
+    transform: translate(50px, 20px);
+
+    /* moves an element 100 pixels to the left */
+    transform: translateX(-10px);
+
+margin: 20px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-out; */
+
+    transition-timing-function: ease-in-out;
+}
+
+button:hover {
+    background-color: #F5A623;
+}
+
+div {
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+    overflow-wrap: break-word;
+    margin: auto;
+    background-color: red;
+    box-sizing:border-box;
+    z-index: -1;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+}

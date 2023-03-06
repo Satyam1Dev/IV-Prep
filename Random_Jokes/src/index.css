@@ -1,0 +1,71 @@
+*{
+    text-align: center;
+    margin: 10px;
+   
+}
+div#joke-container {
+    box-sizing: border-box;
+    background-color: rgb(4, 36, 50);  
+    height: 50%;   
+    padding: 70px;
+    width: 35%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 20px 30px;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+}
+select#get-category {
+    box-shadow: rgb(0 0 0 / 20%) 0px 20px 30px;
+    background-color: rgb(4, 36, 50);  
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 25px;
+    border-radius: 8px;
+
+}
+
+#get-jokes-data ,button {
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 20px 30px;
+    background-color: rgb(4, 36, 50);  
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+   
+  }
+  
+  #get-jokes-data:hover,
+  #get-jokes-data:focus {
+    background-color: #076f6f;
+  }
+
+  .joke-text {
+    font-size: 20px;
+    border: solid 2px white;
+    background: #9c003f;
+    border-radius: 8px;
+}
